@@ -14,6 +14,10 @@ spec:
       containers:
       - name: myapp
         image: mydj:latest
+        resources:
+          limits:
+            memory: "256Mi"
+            cpu: "1000m"
         ports:
         - containerPort: 8000
 ---
